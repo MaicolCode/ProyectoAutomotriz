@@ -11,7 +11,7 @@
     <div class="mx-4 my-4 ">
         <h1 class="text-2xl font-bold inline border-l-2 border-rgba-blue-sky-200 p-3">Lista de peticiones por Buzon.</h1>
         <div class=" overflow-x-auto shadow-md sm:rounded-lg border border-gray-300 mt-10">
-            <div class=" grid grid-cols-3">
+            <div class="grid grid-cols-3 gap-4 p-5">
                 @foreach ($peticiones as $peticion)
                     <div
                         class="max-w-sm p-5 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
