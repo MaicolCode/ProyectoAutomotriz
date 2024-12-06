@@ -1,4 +1,4 @@
-<nav x-data="{ open: false }" class='{{ $classes ?? '' }} flex-col items-start sm:flex-row'>
+<nav x-data="{ open: false }" class='{{ $classes ?? '' }} flex-col items-start sm:flex-row w-screen'>
 
     <div class="hamburger_nav -me-2 flex items-center sm:hidden mx-2">
         <button @click="open = ! open"
