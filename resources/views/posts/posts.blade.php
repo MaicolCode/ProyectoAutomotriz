@@ -17,7 +17,7 @@ inline-flex items-center px-1 pt-1 hover:border-b-2 hover:border-rgba-blue-sky-2
             <article class="skewed bg-rgba-blue-sky-100">
             </article>
             <div class="px-10 sm:px-16 z-10">
-                <b class="text-4xl text-white">Sección de recomendaciones</b>
+                <b class="text-4xl text-white sm:text-black">Sección de recomendaciones</b>
                 <hr>
                 <p class="w-3/2 lg:w-3/5 mt-10 text-xl lg:text-lg font-medium text-slate-900 p-4 bg-gray-400 rounded-md bg-opacity-25">Automotriz Tipan a parte de ofrecerte sus servicios,
                     te ofrece contenido basado
