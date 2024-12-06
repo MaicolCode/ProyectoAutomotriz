@@ -35,13 +35,13 @@
                 <div class="relative w-full h-96 lg:w-full lg:h-2/4 md:w-2/4">
                     <img src="{{ $posts->image }}" alt="{{ $posts->title }}" class=" w-full h-full -z-0 opacity-100">
                     <b
-                        class="absolute bottom-0 mb-20 pl-28 text-5xl overflow-hidden lg:text-6xl md:text-3xl z-10 text-white w-96 lg:w-3/4 bg-slate-700 bg-opacity-50">{{ $posts->title }}</b>
+                        class="absolute bottom-0 mb-20 pl-20 sm:pl-28 text-3xl overflow-hidden sm:text-6xl z-10 text-white w-96 lg:w-3/4 bg-slate-700 bg-opacity-50">{{ $posts->title }}</b>
                 </div>
-                <div class="p-20">
-                    <div class="p-12">
-                        <h2 class="text-center text-4xl font-bold mb-5">Descripción</h2>
+                <div class="py-10 px-5 sm:p-20">
+                    <div class="sm:py-20 sm:px-44">
+                        <h2 class="text-center text-3xl sm:text-4xl font-bold mb-5">Descripción</h2>
                         <hr>
-                        <p class="mt-10 text-xl">
+                        <p class="mt-10 text-md sm:text-xl" style="line-height: 40px">
                             {{ $posts->description }}
                         </p>
                     </div>
@@ -53,7 +53,7 @@
         {{-- Secciones del blog --}}
 
         @if (isset($sections))
-            <div class="flex justify-center">
+            <div class="flex justify-center p-5">
                 @foreach ($sections as $section)                 
                     <div class="prose lg:prose-xl mt-10">{!! $section->content !!}</div>
                 @endforeach
@@ -64,7 +64,7 @@
 
         {{-- Sección de comentarios --}}
 
-        <div class="p-12" id="comments">
+        <div class="py-12 px-5 sm:p-20" id="comments">
             <h1 class="text-2xl">¿Qué te parecio el contenido?</h1>
             <hr>
             @if ($state == 'Insertable')
