@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 .servicesCont {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -38,18 +36,19 @@ body::-webkit-scrollbar:vertical {
     width: 10px;
 }
 
-body::-webkit-scrollbar-button:increment, body::-webkit-scrollbar-button {
+body::-webkit-scrollbar-button:increment,
+body::-webkit-scrollbar-button {
     display: none;
 }
 
-body::-webkit-scrollbar-thumb{
-    background-color: #2333AB;
+body::-webkit-scrollbar-thumb {
+    background-color: #2333ab;
     border-radius: 10px;
     border: 2px solid white;
 }
 
 body::-webkit-scrollbar-track {
-    border-radius: 10px
+    border-radius: 10px;
 }
 
 /* Separadores */
@@ -64,4 +63,4 @@ body::-webkit-scrollbar-track {
     z-index: 0;
     transform: skewY(16deg);
     transform-origin: top right;
-  }
+}
