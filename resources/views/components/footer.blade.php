@@ -27,19 +27,19 @@
                     </tr>
                     <tr>
                         <td>Martes</td>
-                        <td>8:00 - 6:00</td>
+                        <td>8:00 - 6:30</td>
                     </tr>
                     <tr>
                         <td>Miercoles</td>
-                        <td>8:00 - 6:00</td>
+                        <td>8:00 - 6:30</td>
                     </tr>
                     <tr>
                         <td>Jueves</td>
-                        <td>8:00 - 6:00</td>
+                        <td>8:00 - 6:30</td>
                     </tr>
                     <tr>
                         <td>Viernes</td>
-                        <td>8:00 - 6:00</td>
+                        <td>8:00 - 6:30</td>
                     </tr>
                     <tr>
                         <td>Sabado</td>
