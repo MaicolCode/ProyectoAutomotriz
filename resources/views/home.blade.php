@@ -18,7 +18,7 @@
                 <div id="default-carousel" class="relative w-full -z-0 flex flex-col justify-center" data-carousel="slide"
                     style="height: 800px">
                     <!-- Carousel wrapper -->
-                    <div class="relative overflow-hidden rounded-lg md:h-full">
+                    <div class="relative overflow-hidden rounded-lg h-full">
                         <!-- Item 1 -->
                         <div class="hidden duration-1000 ease-in-out blur-sm" data-carousel-item>
                             <img src="https://img.freepik.com/fotos-premium/reparacion-motor-estacion-servicio-reparacion-autos_179755-5004.jpg?w=900"
