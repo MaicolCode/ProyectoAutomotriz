@@ -8,16 +8,16 @@
         stylesLink=" py-3 ml-4 hover:text-slate-900 hover:font-bold duration-300 hover:transform hover:translate-y-0.5
     inline-flex items-center px-1 pt-1 hover:border-b-2 hover:border-rgba-blue-sky-200 leading-1 focus:outline-none focus:border-rgba-blue-sky-100 transition duration-200 ease-in-out" />
     <section class="h-full grid">
-        <div class="w-full h-auto">
+        <div class="w-screen sm:w-full h-auto">
             {{-- Primera seccion de la presentación --}}
             <div
-                class="relative mt-24 h-auto bg-gradient-to-b from-rgba-blue-sky-100 to-rgba-blue-sky-200 shadow-md
+                class="relative mt-14 sm:mt-24 h-auto bg-gradient-to-b from-rgba-blue-sky-100 to-rgba-blue-sky-200 shadow-md
     shadow-rgba-blue-sky-200 flex flex-col items-center">
-                <div class="flex flex-col items-center justify-end pt-20 pb-3">
-                    <h1 class="text-4xl text-blue-100 font-black text-center">
+                <div class="flex flex-col items-center justify-end pt-20">
+                    <h1 class="text-3xl sm:text-4xl text-blue-100 font-black text-center">
                         ¿Quieres contactar con nosotros?
                     </h1>
-                    <p class="w-3/4 lg:w-3/5 text-2xl lg:text-lg text-blue-100 mt-5">Si tienes dudas e inconvenientes con
+                    <p class="w-auto px-5 sm:w-3/4 text-lg sm:text-2xl text-blue-100 mt-5">Si tienes dudas e inconvenientes con
                         los
                         servicios que
                         ofrecemos, o por los servicios que quieres que te realicemos puedes comunicarte directamente con
@@ -56,41 +56,41 @@
             </div>
 
             {{-- Seccion para el formulario de contacto --}}
-            <div class="py-10 px-20 flex flex-col items-center gap-10">
+            <div class="py-10 px-3 sm:px-20 flex flex-col items-center gap-10">
                 <div class="border w-full p-10 lg:p-20 bg-white shadow-xl rounded-md">
-                    <h2 class="text-4xl font-black text-center">O también puedes hacernos conocer tus inquietudes:</h2>
+                    <h2 class="text-2xl sm:text-4xl font-black text-center">O también puedes hacernos conocer tus inquietudes:</h2>
                     {{-- Formulario de contacto --}}
                     <div class="w-full p-4 lg:p-10">
                         <form id="sendInteraction" method="POST">
                             @csrf
                             <div>
-                                <label for="nombres_c">Nombres <strong class="text-red-600">*</strong> :</label>
+                                <label for="nombres_c" class="text-lg sm:text-sm">Nombres <strong class="text-red-600">*</strong> :</label>
                                 <input type="text" id="nombres_c" name="nombres_c"
-                                    class="w-full my-5 text-sm rounded-md outline-1 focus:ring-2 focus:shadow-rgba-blue-sky-200 border-0 bg-rgba-blue-sky-200 bg-opacity-10">
+                                    class="w-full my-5 text-lg sm:text-sm rounded-md outline-1 focus:ring-2 focus:shadow-rgba-blue-sky-200 border-0 bg-rgba-blue-sky-200 bg-opacity-10">
                             </div>
                             <div>
-                                <label for="telefono_c">Telefono <strong class="text-red-600">*</strong> :</label>
+                                <label for="telefono_c" class="text-lg sm:text-sm">Telefono <strong class="text-red-600">*</strong> :</label>
                                 <input type="tel" name="telefono_c" id="telefono_c"
-                                    class="w-full my-5 text-sm rounded-md outline-1 focus:ring-2 focus:shadow-rgba-blue-sky-200 border-0 bg-rgba-blue-sky-200 bg-opacity-10">
+                                    class="w-full my-5 text-lg sm:text-sm rounded-md outline-1 focus:ring-2 focus:shadow-rgba-blue-sky-200 border-0 bg-rgba-blue-sky-200 bg-opacity-10">
                             </div>
                             <div>
-                                <label for="">Asunto <strong class="text-red-600">*</strong> :</label>
+                                <label for="" class="text-lg sm:text-sm">Asunto <strong class="text-red-600">*</strong> :</label>
                                 <br>
                                 <select name="asunto_c" id="asunto_c"
-                                    class=" my-5 text-sm rounded-md outline-1 focus:ring-2 focus:shadow-rgba-blue-sky-200 border-0 bg-rgba-blue-sky-200 bg-opacity-10">
-                                    <option selected disabled>Asunto a tratar...</option>
-                                    <option value="Información General">Información General</option>
-                                    <option value="Servicios">Servicios</option>
+                                    class="my-5 w-full text-lg rounded-md outline-1 focus:ring-2 focus:shadow-rgba-blue-sky-200 border-0 bg-rgba-blue-sky-200 bg-opacity-10">
+                                    <option selected disabled class="text-xs">Asunto a tratar...</option>
+                                    <option value="Información General" class="text-xs">Información General</option>
+                                    <option value="Servicios" class="text-xs">Servicios</option>
                                 </select>
                             </div>
                             <div>
-                                <label for="mensaje_c">Mensaje <strong class="text-red-600">*</strong> :</label>
+                                <label for="mensaje_c" class="text-lg sm:text-sm">Mensaje <strong class="text-red-600">*</strong> :</label>
                                 <textarea name="mensaje_c" id="mensaje_c" cols="30" rows="10"
                                     class="w-full my-5 text-sm rounded-md outline-1 focus:ring-2 focus:shadow-rgba-blue-sky-200 border-0 bg-rgba-blue-sky-200 bg-opacity-10"></textarea>
                             </div>
-                            <div class="relative w-full h-20">
+                            <div class="relative w-full flex justify-end items-center h-20">
                                 <button type="submit"
-                                    class="enviarAsunto absolute right-0 bg-rgba-blue-sky-200 text-white mt-10 w-48 h-12 text-center rounded-md active:transform active:translate-y-1 transition-all hover:ring">
+                                    class="enviarAsunto bg-rgba-blue-sky-200 text-white  w-48 h-12 text-center rounded-md active:transform active:translate-y-1 transition-all hover:ring">
                                     Enviar
                                 </button>
                             </div>
@@ -98,7 +98,7 @@
                     </div>
                 </div>
             </div>
-            <article class="positionCont mt-10 border-t border-black py-28">
+            <article class="flex flex-col sm:flex-row items-center justify-around mt-10 border-t border-black py-28">
                 <aside class="p-5">
                     <h2 class="text-2xl">
                         <b>Si tienes mas preguntas no dudes en visitarnos:</b>
@@ -120,7 +120,7 @@
                 <div class="grid place-content-center p-5 shadow-2xl">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d2513.372510128527!2d-78.5072796749955!3d-0.3811122025286861!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x91d5a5c359e8bb17%3A0xbba73c7d020a2c15!2sMecanica%20Automotriz%20tipan%2C%20Eugenio%20Espejo%2C%20Amagua%C3%B1a!3m2!1d-0.38089419999999996!2d-78.5066126!5e0!3m2!1ses-419!2sec!4v1704675367021!5m2!1ses-419!2sec"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                         height="450" style="border:0;" allowfullscreen="" loading="lazy" class="w-[350px] sm:w-[600px]"
                         referrerPolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </article>
