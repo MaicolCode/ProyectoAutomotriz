@@ -10,13 +10,14 @@
     <x-slot name="title">
         Home
     </x-slot>
-    <section class="h-full grid ">
-        <div class="w-full h-auto">
-            <div
-                class=" relative h-auto w-full rounded-lg bg-gradient-to-b from-rgba-blue-sky-100 to-rgba-blue-sky-200 flex items-center justify-center mt-24">
+    <section class="h-full grid">
+        <div class="w-screen sm:w-auto h-auto">
+            <div class="p-2 sm:p-0">
+                <div
+                class=" relative  h-auto w-full rounded-lg bg-gradient-to-b from-rgba-blue-sky-100 to-rgba-blue-sky-200 flex items-center justify-center mt-12 sm:mt-24">
 
-                <div id="default-carousel" class="relative w-full -z-0 flex flex-col justify-center" data-carousel="slide"
-                    style="height: 800px">
+                <div id="default-carousel" class="relative w-full z-10 flex flex-col justify-center h-[600px] sm:h-[800px]" data-carousel="slide"
+                    >
                     <!-- Carousel wrapper -->
                     <div class="relative overflow-hidden rounded-lg h-full">
                         <!-- Item 1 -->
@@ -54,18 +55,17 @@
                             aria-label="Slide 3" data-carousel-slide-to="2"></button>
                         <button type="button" class="w-3 h-3 rounded-full bg-white" aria-current="false"
                             aria-label="Slide 4" data-carousel-slide-to="3"></button>
-                        <button type="button" class="w-3 h-3 rounded-full bg-white" aria-current="false"
-                            aria-label="Slide 5" data-carousel-slide-to="4"></button>
                     </div>
 
                 </div>
-                <div class="absolute z-10 text-white text-center text-5xl p-5 leading-loose" id="title">
-                    <p style="font-size: 40px; text-shadow: 10px 10px 10px rgba(10, 10, 10)">TALLER DE REPARACIÓN DE
+                <div class="absolute z-10 text-white text-center text-5xl sm:p-5 leading-loose w-full" id="title">
+                    <p style="text-shadow: 10px 10px 10px rgba(10, 10, 10)" class="text-[25px] sm:text-[40px] w-auto">TALLER DE REPARACIÓN DE
                         AUTOMÓVILES</p>
-                    <strong style="font-size: 80px">AUTOMOTRIZ TIPAN</strong>
+                    <strong class="text-[40px] sm:text-[80px]">AUTOMOTRIZ TIPAN</strong>
                 </div>
             </div>
-            <article id="conocenos" class="h-auto relative grid md:grid-cols-2 sm:grid-cols-1 gap-14 p-10 border">
+            </div>
+            <article id="conocenos" class="h-auto relative grid md:grid-cols-2 sm:grid-cols-1 gap-14 px-2 py-5 sm:p-10">
                 <x-card name='Sobre Nosotros' image="./images/familyTipan.jpg">
                     <x-slot name="info">
                         <label>
@@ -171,7 +171,7 @@
                     </x-infoCard>
                 </section>
             </article>
-            <article class="positionCont mt-10 border-t border-black py-28">
+            <article class="flex flex-col sm:flex-row items-center justify-around mt-10 border-t border-black py-28">
                 <aside class="p-5">
                     <h2 class="text-2xl">
                         <b>Nos puedes encontrar en:</b>
@@ -193,10 +193,10 @@
                     </a>
                 </aside>
 
-                <div class="grid place-content-center p-5 shadow-2xl">
+                <div class="grid place-content-center p-5  shadow-2xl">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d2513.372510128527!2d-78.5072796749955!3d-0.3811122025286861!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x91d5a5c359e8bb17%3A0xbba73c7d020a2c15!2sMecanica%20Automotriz%20tipan%2C%20Eugenio%20Espejo%2C%20Amagua%C3%B1a!3m2!1d-0.38089419999999996!2d-78.5066126!5e0!3m2!1ses-419!2sec!4v1704675367021!5m2!1ses-419!2sec"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        height="450" style="border:0;" allowfullscreen="" loading="lazy" class="w-[350px] sm:w-[600px]"
                         referrerPolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </article>
