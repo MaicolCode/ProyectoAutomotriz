@@ -10,7 +10,7 @@
         </x-slot>
     @endif
     <x-navs.navigationV
-        classes="p-2 sticky w-full top-0 flex justify-between bg-white text-black 
+        classes="p-2 sticky top-0 flex justify-between bg-white text-black 
     text-xs items-center z-30"
         stylesLink='py-3 ml-4 text-slate-400 hover:text-gray-900 duration-200 hover:transform 
     hover:translate-y-0.5 dark:hover:text-black 
@@ -32,7 +32,7 @@
                         
                     </div>
                 </div>
-                <div class="relative w-full h-96 lg:w-full lg:h-2/4 md:w-2/4">
+                <div class="relative h-96 lg:h-2/4 md:w-full">
                     <img src="{{ $posts->image }}" alt="{{ $posts->title }}" class=" w-full h-full -z-0 opacity-100">
                     <b
                         class="absolute bottom-0 mb-20 pl-20 sm:pl-28 text-3xl overflow-hidden sm:text-6xl z-10 text-white w-96 lg:w-3/4 bg-slate-700 bg-opacity-50">{{ $posts->title }}</b>
@@ -41,7 +41,7 @@
                     <div class="sm:py-20 sm:px-44">
                         <h2 class="text-center text-3xl sm:text-4xl font-bold mb-5">Descripción</h2>
                         <hr>
-                        <p class="mt-10 text-md sm:text-xl" style="line-height: 40px">
+                        <p class="mt-10 text-md sm:text-xl" style="line-height: 30px">
                             {{ $posts->description }}
                         </p>
                     </div>
@@ -53,7 +53,7 @@
         {{-- Secciones del blog --}}
 
         @if (isset($sections))
-            <div class="flex justify-center p-5">
+            <div class="flex justify-center p-5 sm:p-0">
                 @foreach ($sections as $section)                 
                     <div class="prose lg:prose-xl mt-10">{!! $section->content !!}</div>
                 @endforeach
@@ -64,7 +64,7 @@
 
         {{-- Sección de comentarios --}}
 
-        <div class="py-12 px-5 sm:p-20" id="comments">
+        <div class="py-12 px-0 sm:p-20" id="comments">
             <h1 class="text-2xl">¿Qué te parecio el contenido?</h1>
             <hr>
             @if ($state == 'Insertable')
