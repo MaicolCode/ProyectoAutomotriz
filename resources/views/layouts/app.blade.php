@@ -28,21 +28,23 @@
 
 <body class="font-sans antialiased bg-gray-50">
 
-    <div class=" relative grid w-full min-h-full">
+    <div class=" relative grid min-h-full w-screen sm:w-auto">
         <!-- Page Heading -->
         @if (isset($header))
             <header class="bg-rgba-blue-sky-200 shadow">
-                <div class="max-w-7xl mx-auto py-10 px-4 sm:px-6 lg:px-8">
+                <div class="mx-auto py-10 px-4 sm:px-6 lg:px-8">
                     {{ $header }}
+
                 </div>
             </header>
-        @endif
-
-        <!-- Page Content -->
-        <main>
+        @endif      
+        <main >
             {{ $slot }}
-        </main>
+        </main>  
     </div>
+
+    <!-- Page Content -->
+    
 
     {{-- Script de recursos de IonIcons --}}
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
